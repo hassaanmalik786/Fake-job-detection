@@ -13,7 +13,7 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 
 APP_DIR = os.path.dirname(os.path.abspath(__file__))
 DB_PATH = os.path.join("/tmp", "jobshield.sqlite3")
-app = Flask(__name__, static_folder="public", static_url_path="/static")
+app = Flask(__name__, static_folder="public/static", static_url_path="/static")
 app.config["MAX_CONTENT_LENGTH"] = 1_500_000
 app.config["JSON_SORT_KEYS"] = False
 
